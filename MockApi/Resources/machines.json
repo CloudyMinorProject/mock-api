@@ -1,0 +1,60 @@
+{
+  "Accesspoint": {
+    "AccespointID": "1",
+    "DealerID": "1",
+    "CustomerID": "1",
+    "DeviceSerialNr": "20655949",
+    "ZigbeeSerialNr": "0",
+    "ZigbeeSerialNrHigh": "1286656",
+    "ZigbeeSerialNrLow": "1103237695",
+    "Name": "Accesspoint",
+    "GPSLatitude": "0.000000",
+    "GPSLongitude": "0.000000",
+    "Active": "1"
+  },
+  "Customers": {
+    "Customer": {
+      "CustomerID": "1",
+      "DealerID": "1",
+      "CustomerNr": "-1",
+      "Name": "Unknown",
+      "Address": [],
+      "Phone": [],
+      "Active": "1"
+    }
+  },
+  "Dealers": {
+    "Dealer": {
+      "DealerID": "1",
+      "DealerNr": "1",
+      "Name": "JOZ",
+      "Address": [],
+      "Phone": [],
+      "Active": "1"
+    }
+  },
+  "Machines": {
+    "Machine": {
+      "MachineID": "113",
+      "MachineName": "Feedpusher",
+      "AccespointID": "1",
+      "DeviceSerialNr": "713770090",
+      "ZigbeeSerialNrHigh": "1286656",
+      "ZigbeeSerialNrLow": "1105798918",
+      "DestinationPort": "27003",
+      "AuthenticationKey": "1084700258",
+      "DeviceType": "0",
+      "BoardType": "0",
+      "SoftwareVersion": "131405",
+      "SettingsDatabaseSecs": "0",
+      "SettingsMachineSecs": "0",
+      "SettingReceivedSecs": "0",
+      "SettingsWriteGroup": "0",
+      "StateAPMS": "3",
+      "StateChangedSecs": "1754139474",
+      "LastReceivedSecs": "1754139474",
+      "Active": "1",
+      "ArchivedUp": "0"
+    }
+  }
+}
