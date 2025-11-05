@@ -1,0 +1,52 @@
+# .gitignore for .NET + VS Code
+# Ignore Visual Studio temporary files, build results, and user-specific files
+.vs/
+.vscode/
+
+# Build folders
+[Bb]in/
+[Oo]bj/
+**/bin/
+**/obj/
+
+# Rider
+.idea/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# NuGet
+*.nupkg
+packages/
+
+# ReSharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Dotnet publish output
+publish/
+dist/
+
+# Secrets and local settings
+secrets.json
+.vscode/settings.json
+
+# VS Code workspace storage and history
+.history/
+
+# Ignore build output and tools folders
+artifacts/
+TestResults/
