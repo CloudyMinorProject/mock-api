@@ -20,7 +20,7 @@ namespace MockApi.Models
         public int StateAPMS { get; set; }
         public int StateChangedSecs { get; set; }
         public int LastRecievedSecs { get; set; }
-        public bool Active { get; set; }
+        public int Active { get; set; }
         public int ArchivedUp { get; set; }  
 
     }
