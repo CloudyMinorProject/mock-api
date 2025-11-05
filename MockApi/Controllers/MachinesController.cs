@@ -1,30 +1,22 @@
 //using System.Reflection.PortableExecutable;
 using Microsoft.AspNetCore.Mvc;
 using MockApi.Models;
+using MockApi.Services;
 
 namespace MockApi.Controllers;
 
 [ApiController]
-[Route("[controller]")]
-[ProducesResponseType(typeof(List<Machine>), StatusCodes.Status200OK)] 
-public class MachinesController : ControllerBase
-{
-    private List<Machine> machinesList = new List<Machine>();
+[Route("api/[controller]")]
+public class MachinesController : ControllerBase {
+  private readonly DataService _dataService;
 
+  public MachinesController(DataService dataService) {
+    _dataService = dataService;
+  }
 
-
-    [HttpGet(Name = "GetMachines")]
-    public List<Machine> GetMachines()
-    {
-        Machine machineTest = new Machine();
-        machineTest.MachineID = 1;
-        machineTest.MachineName = "test machine";
-
-        machinesList.Add(machineTest);
-        
-
-        //Add info from database
-        return machinesList;
-
-    }
+  // GET: api/Machines
+  [HttpGet("GetAll")]
+  public ActionResult<IEnumerable<Machine>> GetAllMachines() {
+    return Ok(_dataService.Machines);
+  }
 }
