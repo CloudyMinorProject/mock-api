@@ -3,4 +3,8 @@
 GET {{MockApi_HostAddress}}/weatherforecast/
 Accept: application/json
 
-###
+# ----------------------
+
+### Get all machines
+GET {{MockApi_HostAddress}}/api/machines
+Accept: application/json
