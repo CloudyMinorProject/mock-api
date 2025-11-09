@@ -1,4 +1,3 @@
-//using System.Reflection.PortableExecutable;
 using Microsoft.AspNetCore.Mvc;
 using MockApi.Models;
 
